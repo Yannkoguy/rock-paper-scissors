@@ -57,22 +57,22 @@ function verification() {
 }
 //fonction gagnant de la partie
 function gagnantJeu() {
-  if (scorejoueur === 10 && scoreodinateur < 10) {
+  if (scorejoueur === 5 && scoreodinateur < 5) {
     contenantMessagefin.innerHTML = "Super Vous avez Gagné Le Jeu";
-  } else if (scorejoueur < 10 && scoreodinateur === 10) {
+  } else if (scorejoueur < 5 && scoreodinateur === 5) {
     contenantMessagefin.innerHTML = "Désolé L'ordinateur a Gagné Le Jeu";
   } else {
     contenantMessagefin.innerHTML = "";
   }
 }
 function afficheGagnant() {
-  if (scorejoueur === 10 || scoreodinateur === 10) {
+  if (scorejoueur === 5 || scoreodinateur === 5) {
     SectionGagnant.style.display = "flex";
   }
 }
 
 function reload() {
-  if (scorejoueur > 10 || scoreodinateur > 10) {
+  if (scorejoueur > 5 || scoreodinateur > 5) {
     window.location.reload();
   }
 }
