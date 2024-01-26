@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierre Papier ciseau</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="gagnant">
+      <h3><span id="message_fin"></span></h3>
+      <button class="nouvelle" onclick="window.location.reload();">
+        nouveau jeu
+      </button>
+    </section>
+    <section id="score">
+      <h3>Joueur<span id="scorejoueur"></span></h3>
+      <h3>Ordinateur<span id="scoreordinateur"></span></h3>
+    </section>
+    <section id="game">
+      <div class="choix">
+        <h4>
+          vous
+          <span id="choix-utilisateur"></span>
+        </h4>
+        <h4>
+          ordinateur
+          <span id="choix-ordinateur"></span>
+        </h4>
+      </div>
+      <h4><span id="resultats"></span></h4>
+      <div class="bouttons_choix_jeux">
+        <button id="pierre">Pierre</button>
+        <button id="papier">Pappier</button>
+        <button id="ciseau">Ciseau</button>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
